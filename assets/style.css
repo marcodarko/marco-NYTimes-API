@@ -1,0 +1,59 @@
+header.jumbotron{
+	color: white;
+	background-color: #1B1B5E;
+	text-align: center;
+}
+
+body{
+	padding: 40px;
+}
+
+.sectionTitle { width: 100%;background-color: navy; color: white; padding: 5px; font-weight: 500;}
+
+.bigBox {
+	border: 1px solid navy;
+
+}
+
+.searchTermBox, .recordNumberBox, .startBox, .endBox {
+	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+}
+
+.btn {
+	padding: 10px;
+	margin-bottom: 15px;
+}
+
+#searchButton {	margin-left: 20px;}
+
+.searchicon, .articleicon {
+	padding-bottom: 2px;
+	margin-right: 5px;
+}
+
+#resultsHere{
+	padding: 20px;
+	margin-bottom: 40px;
+}
+
+.headlineAnchor{
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	font-size: 24px;
+}
+
+.headlineAnchor:hover{
+	text-decoration: none;
+}
+
+
+.result{
+	padding: 10px;
+}
+
+.result:hover{
+	background-color: #EDEDED;
+}

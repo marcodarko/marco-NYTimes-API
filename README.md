@@ -1,1 +1,1 @@
-# marco-NYTimes-API
+# NYT-collab

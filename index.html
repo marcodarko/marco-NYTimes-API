@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+	<title>
+		NYT Search
+	</title>
+	<link rel="stylesheet" type="text/css" href="assets/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+	<script src="https://code.jquery.com/jquery.js"></script>
+</head>
+
+<body>
+<header class="header container jumbotron"><h1>NEW YORK TIMES SEARCH</h1></header>
+	<br>
+	<br>
+<div class="container">
+	<div id="searchParam" class="bigBox">
+		<div class="sectionTitle"><img class="searchicon" src="assets/searchicon.png">Search Parameters</div><br>
+				<form>
+						  <div class="searchTermBox">
+						    <label for="search">Search Term</label>
+						    <input type="input" class="form-control" id="searchTerm" placeholder="SEARCH">
+						  </div>
+						  <div class="recordNumberBox">
+						    <label for="recordNumber">No. of Records to Retrieve</label>
+						    <select id="recordNumber" class="form-control">
+							  <option>1</option>
+							  <option>5</option>
+							  <option>10</option>
+							</select>
+						  </div>
+
+						  <div class="startBox">
+						    <label for="search">Start Year (optional)</label>
+						    <input type="search" class="form-control" id="start" placeholder="OPTIONAL">
+						  </div>
+						  <div class="endBox">
+						    <label for="search">End Year (optional)</label>
+						    <input type="search" class="form-control" id="end" placeholder="OPTIONAL">
+						  </div><br>
+
+					<button type="submit" class="btn btn-primary" id="searchButton">Search</button>
+					<button type="clear" class="btn btn-danger" id="clearButton">Clear Results</button>
+			</form>
+	</div><br>
+	<div id="topArticles" class="bigBox">
+		<div class="sectionTitle"><img class="articleicon" src="assets/articleicon.png">Top Articles</div><br>
+		<div id="resultsHere"></div>
+	</div>
+</div>
+
+
+
+
+<script type="text/javascript" src="assets/nyt.js"></script>
+
+</body>
+</html>
