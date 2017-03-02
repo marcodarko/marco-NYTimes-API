@@ -36,13 +36,15 @@ $("#searchButton").on("click", function(event){
 		$("#resultsHere").empty();
 		for(i=0; i<recordsRequested; i++){
 			var articleDiv= $("<div class='result'>");
-			var title= $("<a class='headlineAnchor'>").text(results[i].headline.main);
+			var title= $("<a class='headlineAnchor'>").text(i+1+". "+results[i].headline.main);
 			title.attr("href", results[i].web_url );
 			title.attr("target", "_blank");
 			var lineBreak =$("<br>");
 			var section=$("<p>").text("Section: "+results[i].section_name);
 			var pubDate=$("<p>").text("Publication Date: "+results[i].pub_date);
 			var artURL= $("<a>").text(results[i].web_url);
+			artURL.attr("href", results[i].web_url );
+			artURL.attr("target", "_blank");
 
 			articleDiv.append(title);
 			articleDiv.append(lineBreak);
